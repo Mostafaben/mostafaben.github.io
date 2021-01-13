@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP:wght@100;400&display=swap');
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  font-family: 'Noto Sans JP';
+  text-align: center;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  padding: 0px 20px;
+}
+.navBar img {
+  height: 80px;
+  margin-right: auto;
+}
+
+button {
+  transition-duration: 200ms;
+}
+button:active {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+.navBar button {
+  height: 50px;
+  padding: 0px 20px;
+  border: none;
+  color: white;
+  background-color: #7510f7;
+  border-radius: 30px;
+  outline: none !important;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: calc(100vh - 100px);
+  background-image: url('./assets/img/hero.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: min(90%, 500px);
+  text-align: center;
+}
+
+.mainContent .profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+  margin: 20px;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: 'Fjalla One';
+  font-size: 42px;
+  text-align: center;
+}
+.mainContent p {
+  font-size: 17px;
+}
+
+.aboutContent {
+  height: fit-content;
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #7510f7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.aboutContent * {
+  width: min(90%, 600px);
+}
+.aboutContent h2 {
+  font-family: 'Fjalla One';
+}
+
+.skills {
+  max-width: min(90%, 1300px);
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid #dddddd;
+  margin: -50px auto 100px auto !important;
+}
+
+.bCard {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.bCard p {
+  font-weight: 200;
+  margin: 10px 0px;
+}
+.bCard h4 {
+  font-family: 'Fjalla One';
+}
+
+.bCard img {
+  margin: 20px 0px;
+}
+
+.title {
+  color: #7510f7;
+  margin: 30px 0px;
+}
+
+.bCard .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bCard .items {
+  padding: 10px 0px;
+}
+
+.skills .col-lg-4:nth-child(1) .bCard,
+.skills .col-lg-4:nth-child(2) .bCard {
+  border-right: 1px solid #dddddd;
+}
+@media only screen and (max-width: 1024px) {
+  .skills .col-lg-4:nth-child(1) .bCard,
+  .skills .col-lg-4:nth-child(2) .bCard {
+    border-right: none !important ;
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+.sliderContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  max-width: min(90%, 1300px);
+}
+
+#slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  align-items: center;
+  padding: 40px 0px;
+  flex-direction: row;
+}
+#slider::-webkit-scrollbar {
+  display: none;
+}
+
+#slider img {
+  border-radius: 16px;
+  margin: 0px 5px;
+  background-color: #dddddd;
+  transition-duration: 200ms;
+  width: min(60%, 350px);
+  min-width: min(60%, 350px);
+  max-height: 250px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  transition-duration: 200ms;
+}
+#slider img:active {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+#next {
+  position: absolute;
+  right: -10px !important;
+  z-index: 4;
+  color: #dddddd;
+  font-size: 30px;
+  opacity: 0.5;
+  transition-duration: 200ms;
+}
+#next:hover {
+  opacity: 1;
+}
+#next:active {
+  transform: scale(0.9);
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: #7510f7;
+  color: white;
+  font-family: unset !important;
+}
+
+footer i {
+  color: white;
+  font-size: 30px;
+}
