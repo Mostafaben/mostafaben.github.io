@@ -21,7 +21,7 @@
   <body>
     <nav class="navBar">
       <img src="./assets/img/logo-pnh - Copy.png" alt="logo" />
-      <button>Say Hello</button>
+      <button onclick="scrollToFooter()">Say Hello</button>
     </nav>
 
     <!-- home page main content -->
@@ -102,19 +102,15 @@
       me.
     </p>
     <div class="sliderContainer">
-      <i
-        id="next"
-        class="fas fa-chevron-circle-right"
-        onclick="nextImage()"
-      ></i>
       <div id="slider"></div>
     </div>
 
-    <footer>
+    <footer id="footer">
+      <p>Living, learning, & leveling up one day at a time.</p>
       <div class="links">
-        <i class="far fa-linkedin"></i>
-        <i class="fas fa-instagram"></i>
-        <i class="fas fa-github"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
       </div>
     </footer>
     <script src="script.js" defer></script>

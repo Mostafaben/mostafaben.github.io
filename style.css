@@ -142,8 +142,19 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .skills .col-lg-4:nth-child(1) .bCard,
   .skills .col-lg-4:nth-child(2) .bCard {
-    border-right: none !important ;
+    border-right: none !important;
     border-bottom: 1px solid #dddddd;
+  }
+
+  .sliderContainer i {
+    display: none;
+  }
+  #slider img {
+    transform: scale(0.9);
+  }
+  .selectedImage {
+    transform: scale(1) !important;
+    margin: 0px 5px !important;
   }
 }
 
@@ -171,46 +182,67 @@ h1 {
 }
 
 #slider img {
-  border-radius: 16px;
+  border-radius: 3px;
   margin: 0px 5px;
   background-color: #dddddd;
   transition-duration: 200ms;
-  width: min(60%, 350px);
-  min-width: min(60%, 350px);
+  width: min(100%, 350px);
+  min-width: min(100%, 350px);
   max-height: 250px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   transition-duration: 200ms;
+  opacity: 0.4;
 }
 #slider img:active {
   transform: scale(0.9);
   opacity: 0.9;
 }
 
-#next {
-  position: absolute;
-  right: -10px !important;
-  z-index: 4;
-  color: #dddddd;
-  font-size: 30px;
-  opacity: 0.5;
-  transition-duration: 200ms;
-}
-#next:hover {
-  opacity: 1;
-}
-#next:active {
-  transform: scale(0.9);
-}
-
 footer {
-  height: 300px;
+  padding: 40px;
   width: 100%;
   background-color: #7510f7;
-  color: white;
+  color: #eeeeee;
   font-family: unset !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links {
+  margin: 20px 0px;
 }
 
 footer i {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.indicatorConatiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.indicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 20px;
+  background-color: #dddddd;
+  margin: 0px 4px;
+  transition-duration: 200ms;
+}
+
+.selectedIndicator {
+  transform: scale(1.2);
+  background-color: #888888;
+}
+
+.selectedImage {
+  transform: scale(1.2);
+  margin: 0px 40px;
+  opacity: 1 !important;
+  z-index: 2;
 }
