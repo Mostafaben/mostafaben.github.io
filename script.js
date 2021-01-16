@@ -1,4 +1,4 @@
-const GAP = -10;
+const GAP = 20;
 let isScrolling = false;
 let timeOut;
 
@@ -8,13 +8,12 @@ const images = new Array(5).fill(null).map((_, index) => {
   );
   image.onclick = () => {
     isScrolling = true;
-    goToImage(selectedImage, index);
+    goToImage(index);
   };
   return image;
 });
 
 let selectedImage = 0;
-images[selectedImage].classList.add('selectedImage');
 const indicatorsContainer = document.createElement('div');
 indicatorsContainer.classList.add('indicatorConatiner');
 const sliderContainer = document.querySelector('.sliderContainer');
@@ -29,7 +28,7 @@ slider.onscroll = (e) => {
   } = e;
   const width = images[0].clientWidth;
   const index = Math.floor(scrollLeft / width);
-  if (index !== selectedImage) goToImage(selectedImage, index);
+  if (index !== selectedImage) goToImage(index);
 };
 
 function createSliderImage(imageUrl) {
@@ -39,22 +38,18 @@ function createSliderImage(imageUrl) {
   return image;
 }
 
-function goToImage(pre, next) {
+function goToImage(next) {
   isScrolling = true;
   if (timeOut) clearTimeout(timeOut);
   timeOut = setTimeout(() => {
     isScrolling = false;
   }, 1000);
-  images[pre].classList.remove('selectedImage');
   selectedImage = next;
-  images[selectedImage].classList.add('selectedImage');
   scrollToNextImage();
 }
 
 function nextImage() {
-  images[selectedImage].classList.remove('selectedImage');
   selectedImage = (selectedImage + 1) % images.length;
-  images[selectedImage].classList.add('selectedImage');
   scrollToNextImage();
 }
 
@@ -83,7 +78,7 @@ function createIndicators() {
     indicator.classList.add('indicator');
     indicatorsContainer.appendChild(indicator);
     indicator.onclick = () => {
-      goToImage(selectedImage, index);
+      goToImage(index);
     };
     return indicator;
   });
