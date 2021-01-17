@@ -1,13 +1,12 @@
-const GAP = 20;
+const GAP = 5;
 let isScrolling = false;
 let timeOut;
 
-const images = new Array(5).fill(null).map((_, index) => {
-  const image = createSliderImage(
-    `https://picsum.photos/id/${index + 900}/400`
-  );
+const images = new Array(11).fill(null).map((_, index) => {
+  const image = createSliderImage(`./assets/img/mockups/${index + 1}.png`);
   image.onclick = () => {
     isScrolling = true;
+    openPreviewImage(index + 1);
     goToImage(index);
   };
   return image;
@@ -20,18 +19,16 @@ const sliderContainer = document.querySelector('.sliderContainer');
 sliderContainer.appendChild(indicatorsContainer);
 const indicators = createIndicators();
 changeIndicator(selectedImage);
+const previewImageContainer = document.querySelector('.previewImage');
 
-slider.onscroll = (e) => {
-  if (isScrolling) return;
-  const {
-    srcElement: { scrollLeft },
-  } = e;
-  const width = images[0].clientWidth;
-  const index = Math.floor(scrollLeft / width);
-  if (index !== selectedImage) goToImage(index);
-};
+function openPreviewImage(index) {
+  previewImageContainer.style.display = 'flex';
+  pImg.src = `./assets/img/mockups/${index}.png`;
+  console.log(previewImageContainer.style.display);
+}
 
 function createSliderImage(imageUrl) {
+  console.log(imageUrl);
   const image = document.createElement('img');
   image.src = imageUrl;
   slider.appendChild(image);
@@ -92,3 +89,9 @@ function changeIndicator(page) {
 function scrollToFooter() {
   document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
 }
+
+previewImageContainer.onclick = (e) => {
+  if (e.srcElement == previewImageContainer) {
+    previewImageContainer.style.display = 'none';
+  }
+};
