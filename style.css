@@ -181,7 +181,7 @@ h1 {
   transition-duration: 200ms;
   width: min(100%, 350px);
   min-width: min(100%, 350px);
-  max-height: 250px;
+  height: 250px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   transition-duration: 200ms;
   object-fit: cover;

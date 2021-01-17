@@ -1,12 +1,12 @@
 const GAP = 5;
-let isScrolling = false;
 let timeOut;
 
 const images = new Array(11).fill(null).map((_, index) => {
   const image = createSliderImage(`./assets/img/mockups/${index + 1}.png`);
   image.onclick = () => {
-    isScrolling = true;
-    openPreviewImage(index + 1);
+    setTimeout(() => {
+      openPreviewImage(index + 1);
+    }, 500);
     goToImage(index);
   };
   return image;
@@ -21,14 +21,33 @@ const indicators = createIndicators();
 changeIndicator(selectedImage);
 const previewImageContainer = document.querySelector('.previewImage');
 
+window.onscroll = () => {
+  previewImageContainer.style.display = 'none';
+};
+
+window.onkeydown = (e) => {
+  const { key } = e;
+  switch (key) {
+    case 'ArrowRight': {
+      selectedImage = (selectedImage + 1) % images.length;
+      pImg.src = `./assets/img/mockups/${selectedImage}.png`;
+      break;
+    }
+    case 'ArrowLeft': {
+      if (selectedImage < 1) selectedImage = images.length;
+      else selectedImage = (selectedImage - 1) % images.length;
+      pImg.src = `./assets/img/mockups/${selectedImage}.png`;
+      break;
+    }
+  }
+};
+
 function openPreviewImage(index) {
   previewImageContainer.style.display = 'flex';
   pImg.src = `./assets/img/mockups/${index}.png`;
-  console.log(previewImageContainer.style.display);
 }
 
 function createSliderImage(imageUrl) {
-  console.log(imageUrl);
   const image = document.createElement('img');
   image.src = imageUrl;
   slider.appendChild(image);
@@ -36,11 +55,8 @@ function createSliderImage(imageUrl) {
 }
 
 function goToImage(next) {
-  isScrolling = true;
   if (timeOut) clearTimeout(timeOut);
-  timeOut = setTimeout(() => {
-    isScrolling = false;
-  }, 1000);
+  timeOut = setTimeout(() => {}, 1000);
   selectedImage = next;
   scrollToNextImage();
 }
