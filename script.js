@@ -22,9 +22,8 @@ const images = new Array(11).fill(null).map((_, index) => {
   const image = createCard(`./assets/img/mockups/${index + 1}.png`);
   image.onclick = () => {
     setTimeout(() => {
-      openPreviewImage(index + 1);
+      openPreviewImage((index + 1) % images.length);
     }, 500);
-    goToImage(index);
   };
   return image;
 });
@@ -32,6 +31,12 @@ const images = new Array(11).fill(null).map((_, index) => {
 window.onscroll = () => {
   previewImageContainer.style.display = 'none';
 };
+
+function closeImagePreview(event) {
+  const classList = event?.target.classList;
+  if (!event || classList.contains('previewImage'))
+    previewImageContainer.style.display = 'none';
+}
 
 window.onkeydown = (e) => {
   const { key } = e;

@@ -246,7 +246,7 @@ h1 {
 
 .previewImage img {
   object-fit: contain;
-  max-height: 70vh;
+  max-height: 90vh;
   animation: showImage 200ms;
   max-width: 90%;
 }
@@ -256,4 +256,12 @@ h1 {
     transform: scale(0.95);
     opacity: 0;
   }
+}
+
+.fa-times {
+  color: #eeeeee;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
 }
