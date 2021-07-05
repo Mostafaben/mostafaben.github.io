@@ -27,11 +27,6 @@ function createCard(url, index) {
 
 const images = new Array(11).fill(null).map((_, index) => {
   const image = createCard(`./assets/img/mockups/${index + 1}.png`, index);
-  image.onclick = () => {
-    setTimeout(() => {
-      openPreviewImage((index + 1) % images.length);
-    }, 500);
-  };
   return image;
 });
 
