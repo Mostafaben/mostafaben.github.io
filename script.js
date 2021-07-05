@@ -5,21 +5,28 @@ const indicatorsContainer = document.createElement('div');
 const imagesContainer = document.getElementById('imagesContainer');
 let selectedImage = 0;
 
-function createCard(url) {
+const imageCardTemplate = (index) => `
+      <button onclick='openPreviewImage(${index + 1})'>Preview Project</button>
+      click here to see the how projetc details
+  `;
+
+function createCard(url, index) {
   const div = document.createElement('div');
-  div.classList.add('col', 'col-3');
+  div.classList.add('col', 'col-12', 'col-sm-12', 'col-md-6', 'col-lg-3');
   imagesContainer.appendChild(div);
   const image = document.createElement('img');
   image.src = url;
+  const imageCard = document.createElement('div');
+  imageCard.classList.add('imageCard');
+  imageCard.innerHTML = imageCardTemplate(index);
   div.appendChild(image);
-  image.width = 310;
+  div.appendChild(imageCard);
   image.classList.add('image');
-  image.height = 300;
   return image;
 }
 
 const images = new Array(11).fill(null).map((_, index) => {
-  const image = createCard(`./assets/img/mockups/${index + 1}.png`);
+  const image = createCard(`./assets/img/mockups/${index + 1}.png`, index);
   image.onclick = () => {
     setTimeout(() => {
       openPreviewImage((index + 1) % images.length);
