@@ -6,8 +6,8 @@ const imagesContainer = document.getElementById('imagesContainer');
 let selectedImage = 0;
 
 const imageCardTemplate = (index) => `
-      <button onclick='openPreviewImage(${index + 1})'>Preview Project</button>
-      click here to see the how projetc details
+	<button onclick='openPreviewImage(${index + 1})'>Preview Project</button>
+	click here to see the how project details
   `;
 
 function createCard(url, index) {

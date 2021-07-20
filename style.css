@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+JP:wght@100;400&display=swap");
 html,
 body {
   padding: 0px;
@@ -6,7 +6,7 @@ body {
 }
 
 * {
-  font-family: 'Noto Sans JP';
+  font-family: "Noto Sans JP";
   text-align: center;
 }
 
@@ -78,6 +78,11 @@ body {
   border-radius: 4px;
 }
 
+.imageCard button:hover {
+  color: #141c3ac5;
+  background: white;
+}
+
 .sliderContainer .col:hover .imageCard {
   display: flex !important;
 }
@@ -119,7 +124,7 @@ button:active {
   justify-content: center !important;
   align-items: center !important;
   min-height: calc(100vh - 100px);
-  background-image: url('./assets/img/hero.svg');
+  background-image: url("./assets/img/hero.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: min(90%, 500px);
@@ -135,7 +140,7 @@ button:active {
 }
 
 h1 {
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
   font-size: 42px;
   text-align: center;
 }
@@ -162,7 +167,7 @@ h1 {
 }
 
 .aboutContent h2 {
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
 }
 
 .skills {
@@ -189,7 +194,7 @@ h1 {
 }
 
 .bCard h4 {
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
 }
 
 .bCard img {
