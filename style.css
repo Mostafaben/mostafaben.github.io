@@ -198,7 +198,7 @@ h1 {
 }
 
 .bCard p {
-	font-weight: 200;
+	color: rgb(75, 75, 75);
 	margin: 10px 0px;
 }
 
@@ -269,12 +269,15 @@ h1 {
 	width: 80%;
 	margin: 40px auto 0px auto !important;
 	position: relative;
-	background-color: #141c3a;
+	background-color: #141c38;
 	color: white;
 	padding: 0px !important;
 	border-radius: 20px;
 	margin-bottom: -100px !important;
 	height: fit-content !important;
+	background-image: url(./assets/img/bg-boost-desktop.svg);
+	background-position: center;
+	background-size: cover;
 }
 
 .mContainer .col {
