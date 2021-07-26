@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#7510f7" />
 		<link rel="stylesheet" href="style.css" />
 		<link
 			rel="stylesheet"
@@ -106,6 +107,14 @@
 		</p>
 		<div class="sliderContainer">
 			<div id="imagesContainer" class="row"></div>
+			<i
+				class="fas fa-chevron-right right arrow"
+				onclick="scrollToImage('RIGHT')"
+			></i>
+			<i
+				class="fas fa-chevron-left left arrow"
+				onclick="scrollToImage('LEFT')"
+			></i>
 		</div>
 
 		<a
@@ -153,6 +162,7 @@
 
 		<div class="previewImage" onclick="closeImagePreview(event)">
 			<i class="fas fa-times" onclick="closeImagePreview()"></i>
+
 			<img id="pImg" src="https://picsum.photos/400" />
 		</div>
 		<script src="script.js" defer></script>
