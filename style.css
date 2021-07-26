@@ -354,6 +354,7 @@ h1 {
 	text-decoration: none;
 	border-radius: 8px;
 	cursor: pointer;
+	max-width: fit-content;
 }
 
 .githubButton i {
