@@ -397,30 +397,3 @@ h1 {
 		border-bottom: 1px solid #dddddd;
 	}
 }
-
-@media only screen and (max-width: 600px) {
-	.sliderContainer {
-		overflow: auto !important;
-		width: fit-content !important;
-	}
-	#imagesContainer {
-		display: flex;
-		flex-direction: row !important;
-		width: fit-content !important;
-		overflow-x: auto !important;
-		position: relative;
-	}
-	.arrow {
-		display: flex !important;
-	}
-	.arrow:active {
-		background-color: #888;
-	}
-
-	.sliderContainer {
-		position: relative;
-	}
-	#imagesContainer::-webkit-scrollbar {
-		display: none;
-	}
-}

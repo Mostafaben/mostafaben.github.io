@@ -4,8 +4,6 @@ const previewImageContainer = document.querySelector(".previewImage")
 const indicatorsContainer = document.createElement("div")
 const imagesContainer = document.getElementById("imagesContainer")
 let selectedImage = 0
-let imageIndex = 0
-const x = window.matchMedia("(max-width: 600px)")
 
 const imageCardTemplate = (index) => `
 	<button onclick='openPreviewImage(${index + 1})'>Preview Project</button>
@@ -59,20 +57,6 @@ window.onkeydown = (e) => {
 	}
 }
 
-function scrollToImage(direction) {
-	switch (direction) {
-		case "RIGHT":
-			imageIndex = (imageIndex + 1) % images.length
-			break
-		case "LEFT":
-			imageIndex = (imageIndex - 1) % images.length
-			break
-	}
-	const { clientWidth } = images[0]
-	const left = (clientWidth + 20) * imageIndex
-	imagesContainer.scroll({ left, behavior: "smooth" })
-}
-
 function openPreviewImage(index) {
 	selectedImage = index
 	previewImageContainer.style.display = "flex"
@@ -83,17 +67,3 @@ function openPreviewImage(index) {
 function scrollToFooter() {
 	document.getElementById("footer").scrollIntoView({ behavior: "smooth" })
 }
-
-function changeSliderImage(x) {
-	if (!x.matches) {
-	} else {
-		const cols = imagesContainer.children
-		imagesContainer.classList.remove("row")
-		cols.forEach((element) => {
-			element.classList = ["mobileImage"]
-		})
-	}
-}
-
-changeSliderImage(x)
-x.addListener(changeSliderImage)
