@@ -1,8 +1,8 @@
 const GAP = 5;
 let timeOut;
-const previewImageContainer = document.querySelector('.previewImage');
-const indicatorsContainer = document.createElement('div');
-const imagesContainer = document.getElementById('imagesContainer');
+const previewImageContainer = document.querySelector(".previewImage");
+const indicatorsContainer = document.createElement("div");
+const imagesContainer = document.getElementById("imagesContainer");
 let selectedImage = 0;
 
 const imageCardTemplate = (index) => `
@@ -11,17 +11,17 @@ const imageCardTemplate = (index) => `
   `;
 
 function createCard(url, index) {
-  const div = document.createElement('div');
-  div.classList.add('col', 'col-12', 'col-sm-12', 'col-md-6', 'col-lg-3');
+  const div = document.createElement("div");
+  div.classList.add("col", "col-12", "col-sm-12", "col-md-6", "col-lg-3");
   imagesContainer.appendChild(div);
-  const image = document.createElement('img');
+  const image = document.createElement("img");
   image.src = url;
-  const imageCard = document.createElement('div');
-  imageCard.classList.add('imageCard');
+  const imageCard = document.createElement("div");
+  imageCard.classList.add("imageCard");
   imageCard.innerHTML = imageCardTemplate(index);
   div.appendChild(image);
   div.appendChild(imageCard);
-  image.classList.add('image');
+  image.classList.add("image");
   return image;
 }
 
@@ -31,24 +31,24 @@ const images = new Array(11).fill(null).map((_, index) => {
 });
 
 window.onscroll = () => {
-  previewImageContainer.style.display = 'none';
+  previewImageContainer.style.display = "none";
 };
 
 function closeImagePreview(event) {
   const classList = event?.target.classList;
-  if (!event || classList.contains('previewImage'))
-    previewImageContainer.style.display = 'none';
+  if (!event || classList.contains("previewImage"))
+    previewImageContainer.style.display = "none";
 }
 
 window.onkeydown = (e) => {
   const { key } = e;
   switch (key) {
-    case 'ArrowRight': {
+    case "ArrowRight": {
       selectedImage = (selectedImage + 1) % images.length;
       pImg.src = `./assets/img/mockups/${selectedImage}.png`;
       break;
     }
-    case 'ArrowLeft': {
+    case "ArrowLeft": {
       if (selectedImage < 1) selectedImage = images.length;
       else selectedImage = (selectedImage - 1) % images.length;
       pImg.src = `./assets/img/mockups/${selectedImage}.png`;
@@ -58,10 +58,13 @@ window.onkeydown = (e) => {
 };
 
 function openPreviewImage(index) {
-  previewImageContainer.style.display = 'flex';
+  previewImageContainer.style.display = "flex";
   pImg.src = `./assets/img/mockups/${index}.png`;
 }
 
 function scrollToFooter() {
-  document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
 }
+
+
+

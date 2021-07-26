@@ -1,146 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" type="image/x-icon" href="./assets/img/icon.ico" />
-    <title>Mostafa Ben</title>
-  </head>
-  <body>
-    <nav class="navBar">
-      <img src="./assets/img/logo-pnh - Copy.png" alt="logo" />
-      <button onclick="scrollToFooter()">Say Hello</button>
-    </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+			crossorigin="anonymous"
+		/>
+		<link rel="icon" type="image/x-icon" href="./assets/img/icon.ico" />
+		<title>Mostafa Ben</title>
+	</head>
+	<body>
+		<nav class="navBar">
+			<img src="./assets/img/logo-pnh - Copy.png" alt="logo" />
+			<button onclick="scrollToFooter()" class="blueButton">Say Hello</button>
+		</nav>
 
-    <!-- home page main content -->
+		<!-- home page main content -->
 
-    <div class="mainContent">
-      <h1>FullStack Web & React Native Mobile Developer</h1>
-      <p>
-        I design and code beautifully simple things, you will love what i
-        create.
-      </p>
-      <img src="./assets/img/me.jpg" class="profileImage" />
-    </div>
+		<div class="mainContent">
+			<h1>FullStack Web & React Native Mobile Developer</h1>
+			<p>
+				I design and code beautifully simple things, you will love what i
+				create.
+			</p>
+			<img src="./assets/img/me.jpg" class="profileImage" />
+			<button class="blueButton">
+				<a href="./assets/resume.pdf" download="Mostapha_benlagha_resume"
+					>Download Resume</a
+				>
+			</button>
+		</div>
 
-    <!-- about content  -->
+		<!-- about content  -->
 
-    <div class="aboutContent">
-      <h2>Hi, I’m Mostafa. Nice to meet you.</h2>
-      <p>
-        Since beginning my journey as a freelance Developer nearly 4 years ago,
-        I've done remote work for agencies, consulted for startups, and
-        collaborated with talented people to create digital products for both
-        business and consumer use. I'm quietly confident, naturally curious, and
-        perpetually working on improving my chops one design problem at a time.
-      </p>
-    </div>
+		<div class="aboutContent">
+			<h2>Hi, I’m Mostafa. Nice to meet you.</h2>
+			<p>
+				Since beginning my journey as a freelance Developer nearly 4 years ago,
+				I've done remote work for agencies, consulted for startups, and
+				collaborated with talented people to create digital products for both
+				business and consumer use. I'm quietly confident, naturally curious, and
+				perpetually working on improving my chops one design problem at a time.
+			</p>
+		</div>
 
-    <div class="row skills">
-      <div class="col col-12 col-md-12 col-lg-4 col-xl-4">
-        <div class="bCard">
-          <img src="./assets/img/frontend.svg" alt="front-end" />
-          <h4>Front-end Developer</h4>
-          <p>
-            I like to code things from scratch, and enjoy bringing ideas to life
-            in the browser.
-          </p>
-          <span class="title"> Technologies </span>
-          <div class="list">
-            <p class="item">Angular</p>
-            <p class="item">React</p>
-            <p class="item">JQuery</p>
-          </div>
-        </div>
-      </div>
-      <div class="col col-12 col-md-12 col-lg-4 col-xl-4">
-        <div class="bCard">
-          <img src="./assets/img/designer.svg" alt="front-end" />
-          <h4>Back-end Developer</h4>
-          <p>I write clean and structured code</p>
-          <span class="title"> Technologies </span>
-          <div class="list">
-            <p class="item">Nodejs</p>
-            <p class="item">Php Laravel</p>
-            <p class="item">Php</p>
-          </div>
-        </div>
-      </div>
-      <div class="col col-12 col-md-12 col-lg-4 col-xl-4">
-        <div class="bCard">
-          <img src="./assets/img/frontend.svg" alt="front-end" />
-          <h4>Mobile Dev</h4>
-          <p>
-            I value simple content structure, clean design patterns, and
-            thoughtful interactions.
-          </p>
-          <span class="title"> Technologies </span>
-          <div class="list">
-            <p class="item">React Native</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <h1>My Work</h1>
-    <p style="margin-top: 30px">
-      Here are a few projects I've worked on recently. Want to see more? Email
-      me.
-    </p>
-    <div class="sliderContainer">
-      <div id="imagesContainer" class="row"></div>
-    </div>
+		<div class="row skills">
+			<div class="col col-12 col-md-12 col-lg-4 col-xl-4">
+				<div class="bCard">
+					<img src="./assets/img/frontend.svg" alt="front-end" />
+					<h4>Front-end Developer</h4>
+					<p>
+						I like to code things from scratch, and enjoy bringing ideas to life
+						in the browser.
+					</p>
+					<span class="title"> Technologies </span>
+					<div class="list">
+						<p class="item">Angular</p>
+						<p class="item">React</p>
+						<p class="item">JQuery</p>
+					</div>
+				</div>
+			</div>
+			<div class="col col-12 col-md-12 col-lg-4 col-xl-4">
+				<div class="bCard">
+					<img src="./assets/img/designer.svg" alt="front-end" />
+					<h4>Back-end Developer</h4>
+					<p>I write clean and structured code</p>
+					<span class="title"> Technologies </span>
+					<div class="list">
+						<p class="item">Nodejs</p>
+						<p class="item">Php Laravel</p>
+						<p class="item">Php</p>
+					</div>
+				</div>
+			</div>
+			<div class="col col-12 col-md-12 col-lg-4 col-xl-4">
+				<div class="bCard">
+					<img src="./assets/img/frontend.svg" alt="front-end" />
+					<h4>Mobile Dev</h4>
+					<p>
+						I value simple content structure, clean design patterns, and
+						thoughtful interactions.
+					</p>
+					<span class="title"> Technologies </span>
+					<div class="list">
+						<p class="item">React Native</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h1>My Work</h1>
+		<p style="margin-top: 30px">
+			Here are a few projects I've worked on recently. Want to see more? Email
+			me.
+		</p>
+		<div class="sliderContainer">
+			<div id="imagesContainer" class="row"></div>
+		</div>
 
-    <div class="row mContainer">
-      <div class="col col-12 col-sm-12 col-md-4 col-xl-4">
-        <h1>Start a project</h1>
-      </div>
-      <div class="col col-12 col-sm-12 col-md-4 col-xl-4">
-        <p>
-          Interested in working together? We should queue up a chat. I’ll buy
-          the coffee.
-        </p>
-      </div>
-      <div class="col col-12 col-sm-12 col-md-4 col-xl-4">
-        <a href="mailto:fm_benlagha@esi.dz">Let's do this</a>
-      </div>
-    </div>
+		<div class="row mContainer">
+			<div class="col col-12 col-sm-12 col-md-4 col-xl-4">
+				<h1>Start a project</h1>
+			</div>
+			<div class="col col-12 col-sm-12 col-md-4 col-xl-4">
+				<p>
+					Interested in working together? We should queue up a chat. I’ll buy
+					the coffee.
+				</p>
+			</div>
+			<div class="col col-12 col-sm-12 col-md-4 col-xl-4">
+				<a href="mailto:fm_benlagha@esi.dz">Let's do this</a>
+			</div>
+		</div>
 
-    <div id="footer">
-      <img src="./assets/img/logo-pnh - Copy.png" alt="img" />
-      <p>Living, learning, & leveling up one day at a time.</p>
-      <div class="links">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/mostapha-el-amine-benlagha-a24190174/"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.github.com/mostafaben" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.facebook.com/mostafabenlagha" target="_blank">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-      </div>
-    </div>
+		<div id="footer">
+			<img src="./assets/img/logo-pnh - Copy.png" alt="img" />
+			<p>Living, learning, & leveling up one day at a time.</p>
+			<div class="links">
+				<a
+					target="_blank"
+					href="https://www.linkedin.com/in/mostapha-el-amine-benlagha-a24190174/"
+				>
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="https://www.github.com/mostafaben" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://www.facebook.com/mostafabenlagha" target="_blank">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+			</div>
+		</div>
 
-    <div class="previewImage" onclick="closeImagePreview(event)">
-      <i class="fas fa-times" onclick="closeImagePreview()"></i>
-      <img id="pImg" src="https://picsum.photos/400" />
-    </div>
-    <script src="script.js" defer></script>
-  </body>
+		<div class="previewImage" onclick="closeImagePreview(event)">
+			<i class="fas fa-times" onclick="closeImagePreview()"></i>
+			<img id="pImg" src="https://picsum.photos/400" />
+		</div>
+		<script src="script.js" defer></script>
+	</body>
 </html>
