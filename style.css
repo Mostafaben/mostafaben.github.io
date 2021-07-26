@@ -341,3 +341,37 @@ h1 {
 	top: 20px;
 	cursor: pointer;
 }
+
+.githubButton {
+	display: flex;
+	flex-direction: row;
+	padding: 20px 30px;
+	background-color: black;
+	color: white;
+	width: fit-content;
+	margin: 20px auto;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.githubButton i {
+	margin-right: 20px;
+	font-size: 20px;
+}
+.githubButton:hover {
+	color: white;
+	animation: animateButton 1s infinite;
+}
+
+@keyframes animateButton {
+	0% {
+	}
+	50% {
+		opacity: 0.7;
+		transform: scale(0.9);
+	}
+	100% {
+	}
+}
