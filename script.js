@@ -36,8 +36,7 @@ window.onscroll = () => {
 
 function closeImagePreview(event) {
 	const classList = event?.target.classList
-	if (!event || classList.contains("previewImage"))
-		previewImageContainer.style.display = "none"
+	if (!event || classList.contains("previewImage")) previewImageContainer.style.display = "none"
 }
 
 window.onkeydown = (e) => {
