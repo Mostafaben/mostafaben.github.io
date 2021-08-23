@@ -25,7 +25,7 @@ function createCard(url, index) {
 	return image
 }
 
-const images = new Array(11).fill(null).map((_, index) => {
+const images = new Array(15).fill(null).map((_, index) => {
 	const image = createCard(`./assets/img/mockups/${index + 1}.png`, index)
 	return image
 })
