@@ -136,14 +136,87 @@
         <h2 class="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
       </div>
-      <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg">
-        <p class="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-          Versatile full-stack developer with 5+ years of experience building
-          scalable web applications. Expert in Angular, React, Node.js, and RESTful
-          APIs. Proven leader in Agile teams with a strong focus on clean code
-          and continuous learning. Passionate about creating exceptional user experiences
-          and delivering high-quality solutions that drive business success.
-        </p>
+      
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Profile Image/Icon -->
+        <div class="order-2 lg:order-1 flex justify-center lg:justify-start">
+          <div class="relative">
+            <div class="w-48 h-48 sm:w-64 sm:h-64 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl animate-float">
+              <div class="w-40 h-40 sm:w-56 sm:h-56 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center animate-glow">
+                <i class="fas fa-user-tie text-4xl sm:text-6xl text-indigo-600"></i>
+              </div>
+            </div>
+            <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-16 sm:h-16 bg-yellow-400 rounded-full opacity-20 animate-pulse animate-float"></div>
+            <div class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-8 h-8 sm:w-12 sm:h-12 bg-pink-400 rounded-full opacity-20 animate-pulse delay-1000 animate-float"></div>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="order-1 lg:order-2 space-y-6">
+          <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg">
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
+                  <i class="fas fa-code text-indigo-600"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-indigo-600">Full-Stack Developer</h3>
+              </div>
+              
+              <p class="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
+                Versatile full-stack developer with <span class="font-semibold text-indigo-600">5+ years of experience</span> building
+                scalable web applications. Expert in Angular, React, Node.js, and RESTful
+                APIs with a passion for creating exceptional user experiences.
+              </p>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="flex items-center space-x-3 p-3 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
+                  <i class="fas fa-users text-indigo-600"></i>
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Team Leadership</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
+                  <i class="fas fa-rocket text-indigo-600"></i>
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Agile Development</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
+                  <i class="fas fa-lightbulb text-indigo-600"></i>
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Problem Solving</span>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
+                  <i class="fas fa-graduation-cap text-indigo-600"></i>
+                  <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Continuous Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Highlights -->
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-2xl p-6 sm:p-8">
+            <h4 class="text-lg font-semibold text-indigo-600 mb-4 flex items-center">
+              <i class="fas fa-star mr-2"></i>
+              Key Highlights
+            </h4>
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <i class="fas fa-check-circle text-green-500 mt-1 flex-shrink-0"></i>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  <span class="font-semibold">Proven Leader:</span> Led development teams and mentored junior developers in Agile environments
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <i class="fas fa-check-circle text-green-500 mt-1 flex-shrink-0"></i>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  <span class="font-semibold">Technical Excellence:</span> Delivered high-quality, scalable solutions using modern technologies
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <i class="fas fa-check-circle text-green-500 mt-1 flex-shrink-0"></i>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  <span class="font-semibold">Business Impact:</span> Focused on creating solutions that drive measurable business success
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
