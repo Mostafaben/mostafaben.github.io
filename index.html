@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-    <title>Mostapha BENLAGHA - Full-Stack Developer</title>
+  <title>Mostapha BENLAGHA - Full-Stack Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
@@ -12,38 +12,41 @@
       darkMode: 'class',
     }
   </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
+</head>
 
- <body
-   class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 text-gray-900 font-sans transition-colors duration-300 dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900 dark:text-white">
+<body
+  class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 text-gray-900 font-sans transition-colors duration-300 dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900 dark:text-white">
   <!-- Navigation -->
-  <nav id="navbar" class="sticky top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 dark:bg-slate-900/90 transition-all duration-300">
+  <nav id="navbar"
+    class="sticky top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 dark:bg-slate-900/90 transition-all duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
       <div class="flex justify-between items-center">
         <div class="text-lg sm:text-xl font-bold text-indigo-600 dark:text-indigo-400">Mostapha BENLAGHA</div>
-         <div class="hidden md:flex space-x-6 lg:space-x-8">
-           <a href="#about" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">About</a>
-           <a href="#skills" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Skills</a>
-           <a href="#experience" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Experience</a>
-           <a href="#education" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Education</a>
-           <a href="#certifications" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Certifications</a>
-           <a href="#projects" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Projects</a>
-           <a href="#contact" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Contact</a>
-         </div>
+        <div class="hidden md:flex space-x-6 lg:space-x-8">
+          <a href="#about" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">About</a>
+          <a href="#skills" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Skills</a>
+          <a href="#experience" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Experience</a>
+          <a href="#education" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Education</a>
+          <a href="#certifications"
+            class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Certifications</a>
+          <a href="#projects" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Projects</a>
+          <a href="#contact" class="hover:text-indigo-600 transition-colors text-sm lg:text-base">Contact</a>
+        </div>
         <div class="flex items-center space-x-2">
           <button id="theme-toggle"
-            class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors"
+            class="h-10 w-10 p-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors"
             title="Toggle dark mode">
             <i class="fas fa-moon dark:hidden text-sm"></i>
             <i class="fas fa-sun hidden dark:inline text-sm"></i>
           </button>
-          <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors">
+          <button id="mobile-menu-toggle"
+            class="md:hidden  h-10 w-10  p-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors">
             <i class="fas fa-bars text-sm"></i>
           </button>
         </div>
@@ -63,70 +66,76 @@
     </div>
   </nav>
 
-   <!-- Hero Section -->
-   <section class="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 min-h-screen flex items-center animate-gradient">
-     <div class="max-w-6xl mx-auto w-full">
-       <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-         <div class="space-y-6 text-center lg:text-left">
-           <div class="space-y-4">
-             <h1
-               class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-               Full-Stack Developer
-             </h1>
-             <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-               I build scalable web applications with modern technologies.
-               Passionate about clean code, agile development, and creating
-               exceptional user experiences.
-             </p>
+  <!-- Hero Section -->
+  <section class="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6 min-h-screen flex items-center animate-gradient">
+    <div class="max-w-6xl mx-auto w-full">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div class="space-y-6 text-center lg:text-left">
+          <div class="space-y-4">
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              Full-Stack Developer
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              I build scalable web applications with modern technologies.
+              Passionate about clean code, agile development, and creating
+              exceptional user experiences.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#contact"
+              class="bg-indigo-600 text-white px-6 sm:px-8 py-3 rounded-lg hover:bg-indigo-700 transition-all duration-300 font-medium hover-lift hover-glow text-center">
+              Get In Touch
+            </a>
+            <a href="#projects"
+              class="border border-indigo-600 text-indigo-600 px-6 sm:px-8 py-3 rounded-lg hover:bg-indigo-600 hover:text-white transition-all duration-300 font-medium hover-lift text-center">
+              View My Work
+            </a>
+          </div>
+          <div class="flex justify-center lg:justify-start space-x-6 pt-4">
+            <a href="https://github.com/mostafaben" target="_blank"
+              class="text-gray-600 hover:text-indigo-600 transition-all duration-300 hover-rotate">
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mostapha-benlagha/" target="_blank"
+              class="text-gray-600 hover:text-indigo-600 transition-all duration-300 hover-rotate">
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="mailto:mos.benlagha@gmail.com"
+              class="text-gray-600 hover:text-indigo-600 transition-all duration-300 hover-rotate">
+              <i class="fas fa-envelope text-2xl"></i>
+            </a>
+          </div>
         </div>
-           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-             <a href="#contact"
-               class="bg-indigo-600 text-white px-6 sm:px-8 py-3 rounded-lg hover:bg-indigo-700 transition-all duration-300 font-medium hover-lift hover-glow text-center">
-               Get In Touch
-             </a>
-             <a href="#projects"
-               class="border border-indigo-600 text-indigo-600 px-6 sm:px-8 py-3 rounded-lg hover:bg-indigo-600 hover:text-white transition-all duration-300 font-medium hover-lift text-center">
-               View My Work
-             </a>
+        <div class="relative flex justify-center lg:justify-end">
+          <div
+            class="w-64 h-64 sm:w-80 sm:h-80 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl animate-float">
+            <div
+              class="w-56 h-56 sm:w-72 sm:h-72 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center animate-glow">
+              <i class="fas fa-code text-4xl sm:text-6xl text-indigo-600 animate-bounce"></i>
+            </div>
+          </div>
+          <div
+            class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse animate-float">
+          </div>
+          <div
+            class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 bg-pink-400 rounded-full opacity-20 animate-pulse delay-1000 animate-float">
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 border-2 border-indigo-300 rounded-full animate-spin"
+            style="animation-duration: 20s;"></div>
+        </div>
       </div>
-           <div class="flex justify-center lg:justify-start space-x-6 pt-4">
-             <a href="https://github.com/mostafaben" target="_blank"
-               class="text-gray-600 hover:text-indigo-600 transition-all duration-300 hover-rotate">
-               <i class="fab fa-github text-2xl"></i>
-             </a>
-             <a href="https://www.linkedin.com/in/mostapha-benlagha/" target="_blank"
-               class="text-gray-600 hover:text-indigo-600 transition-all duration-300 hover-rotate">
-               <i class="fab fa-linkedin text-2xl"></i>
-             </a>
-             <a href="mailto:mos.benlagha@gmail.com" class="text-gray-600 hover:text-indigo-600 transition-all duration-300 hover-rotate">
-               <i class="fas fa-envelope text-2xl"></i>
-             </a>
-           </div>
-         </div>
-         <div class="relative flex justify-center lg:justify-end">
-           <div
-             class="w-64 h-64 sm:w-80 sm:h-80 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl animate-float">
-             <div class="w-56 h-56 sm:w-72 sm:h-72 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center animate-glow">
-               <i class="fas fa-code text-4xl sm:text-6xl text-indigo-600 animate-bounce"></i>
-             </div>
-           </div>
-           <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse animate-float"></div>
-           <div
-             class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 bg-pink-400 rounded-full opacity-20 animate-pulse delay-1000 animate-float">
-           </div>
-           <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 border-2 border-indigo-300 rounded-full animate-spin" style="animation-duration: 20s;"></div>
-         </div>
-       </div>
-     </div>
-   </section>
+    </div>
+  </section>
 
   <main class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16 sm:space-y-20">
     <!-- About Section -->
     <section id="about" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
-       <div class="text-center mb-8 sm:mb-12">
-         <h2 class="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
-         <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
-       </div>
+      <div class="text-center mb-8 sm:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
       <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg">
         <p class="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
           Versatile full-stack developer with 5+ years of experience building
@@ -136,115 +145,121 @@
           and delivering high-quality solutions that drive business success.
         </p>
       </div>
-      </section>
+    </section>
 
-     <!-- Skills Section -->
-     <section id="skills" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
-       <div class="text-center mb-8 sm:mb-12">
-         <h2 class="text-3xl sm:text-4xl font-bold mb-4">Technical Skills</h2>
-         <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
-       </div>
-       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-         <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover-lift">
-           <div class="flex items-center mb-4">
-             <i class="fas fa-laptop-code text-2xl text-indigo-600 mr-3"></i>
-             <h3 class="text-xl font-semibold">Front-end</h3>
-           </div>
+    <!-- Skills Section -->
+    <section id="skills" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
+      <div class="text-center mb-8 sm:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Technical Skills</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover-lift">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-laptop-code text-2xl text-indigo-600 mr-3"></i>
+            <h3 class="text-xl font-semibold">Front-end</h3>
+          </div>
           <div class="space-y-3">
             <div class="flex justify-between items-center">
               <span>Angular</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-5/6 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-5/6 h-full bg-indigo-600 rounded-full progress-bar" data-width="83"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>React</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-4/5 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-4/5 h-full bg-indigo-600 rounded-full progress-bar" data-width="80"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>TypeScript</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-5/6 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-5/6 h-full bg-indigo-600 rounded-full progress-bar" data-width="83"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>Tailwind CSS</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-4/5 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-4/5 h-full bg-indigo-600 rounded-full progress-bar" data-width="80"></div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <span>React Native (Expo)</span>
+              <div class="w-24 h-2 bg-gray-200 rounded-full">
+                <div class="w-3/4 h-full bg-indigo-600 rounded-full progress-bar" data-width="75"></div>
               </div>
             </div>
           </div>
         </div>
 
-         <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover-lift">
-           <div class="flex items-center mb-4">
-             <i class="fas fa-server text-2xl text-indigo-600 mr-3"></i>
-             <h3 class="text-xl font-semibold">Back-end</h3>
-           </div>
+        <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover-lift">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-server text-2xl text-indigo-600 mr-3"></i>
+            <h3 class="text-xl font-semibold">Back-end</h3>
+          </div>
           <div class="space-y-3">
             <div class="flex justify-between items-center">
               <span>Node.js</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-5/6 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-5/6 h-full bg-indigo-600 rounded-full progress-bar" data-width="83"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>Express.js</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-4/5 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-4/5 h-full bg-indigo-600 rounded-full progress-bar" data-width="80"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>NestJS</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-3/4 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-3/4 h-full bg-indigo-600 rounded-full progress-bar" data-width="75"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>REST APIs</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-5/6 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-5/6 h-full bg-indigo-600 rounded-full progress-bar" data-width="83"></div>
               </div>
             </div>
           </div>
         </div>
 
-         <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover-lift">
-           <div class="flex items-center mb-4">
-             <i class="fas fa-database text-2xl text-indigo-600 mr-3"></i>
-             <h3 class="text-xl font-semibold">Database & Tools</h3>
-           </div>
+        <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover-lift">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-database text-2xl text-indigo-600 mr-3"></i>
+            <h3 class="text-xl font-semibold">Database & Tools</h3>
+          </div>
           <div class="space-y-3">
             <div class="flex justify-between items-center">
               <span>MongoDB</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-4/5 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-4/5 h-full bg-indigo-600 rounded-full progress-bar" data-width="80"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>PostgreSQL</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-3/4 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-3/4 h-full bg-indigo-600 rounded-full progress-bar" data-width="75"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>Docker</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-3/4 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-3/4 h-full bg-indigo-600 rounded-full progress-bar" data-width="75"></div>
               </div>
             </div>
             <div class="flex justify-between items-center">
               <span>Git</span>
               <div class="w-24 h-2 bg-gray-200 rounded-full">
-                <div class="w-5/6 h-full bg-indigo-600 rounded-full"></div>
+                <div class="w-5/6 h-full bg-indigo-600 rounded-full progress-bar" data-width="83"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </section>
+    </section>
 
     <!-- Experience Section -->
     <section id="experience" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
@@ -252,104 +267,270 @@
         <h2 class="text-3xl sm:text-4xl font-bold mb-4">Work Experience</h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
       </div>
-      <div class="space-y-8">
-        <div
-          class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg border-l-4 border-indigo-600">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-        <div>
-              <h3 class="text-xl font-semibold text-indigo-600">Development Team Lead</h3>
-              <p class="text-lg font-medium">SoBiapi (Remote)</p>
+      <div class="space-y-12">
+        <!-- SoBiapi Company Group -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 mb-6">
+            <div
+              class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-building text-2xl text-indigo-600"></i>
             </div>
-            <span
-              class="text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-3 py-1 rounded-full">Jul
-              2022 – Present</span>
+            <div class="flex-1">
+              <h3 class="text-xl sm:text-2xl font-bold text-indigo-600">SoBiapi</h3>
+              <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Remote • Nov 2021 – Present</p>
+            </div>
           </div>
-          <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Led team for Upskilling Academy 2 (Qualiopi-compliant B2B training platform)
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Oversaw development, performance optimization, and client-specific features
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Conducted code reviews and managed Agile workflows
-            </li>
-          </ul>
+
+          <div class="space-y-6 ml-0 sm:ml-16">
+            <div
+              class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border-l-4 border-indigo-600">
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 space-y-2 sm:space-y-0">
+                <div class="flex-1">
+                  <h4 class="text-lg sm:text-xl font-semibold text-indigo-600">Development Team Lead</h4>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-2 sm:px-3 py-1 rounded-full self-start">Jul
+                  2022 – Present</span>
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Led and mentored a team of developers, overseeing project planning and delivery</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Conducted code reviews, ensured coding standards, and improved Git workflows</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Actively participated in Agile Scrum ceremonies including sprint planning, standups, and
+                    retrospectives</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Collaborated with cross-functional teams in a remote setup to deliver production-ready
+                    features</span>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border-l-4 border-indigo-500">
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 space-y-2 sm:space-y-0">
+                <div class="flex-1">
+                  <h4 class="text-lg sm:text-xl font-semibold text-indigo-600">Senior Full-Stack Developer</h4>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-2 sm:px-3 py-1 rounded-full self-start">Mar
+                  2025 – Present</span>
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Developed and maintained backend services using Node.js, Express.js, and MongoDB</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Built and integrated APIs for scalable client-facing applications</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Wrote unit and integration tests to guarantee system reliability</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Applied SQL expertise and full-stack strategies to ensure system robustness</span>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border-l-4 border-indigo-400">
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 space-y-2 sm:space-y-0">
+                <div class="flex-1">
+                  <h4 class="text-lg sm:text-xl font-semibold text-indigo-600">Lead Front-End Developer</h4>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-2 sm:px-3 py-1 rounded-full self-start">Jan
+                  2022 – Jul 2022</span>
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Managed the front-end team, setting development standards and timelines</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Collaborated closely with designers and backend teams for seamless UI/UX integration</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Ensured cross-browser compatibility and responsive design implementation using Angular</span>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border-l-4 border-indigo-300">
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 space-y-2 sm:space-y-0">
+                <div class="flex-1">
+                  <h4 class="text-lg sm:text-xl font-semibold text-indigo-600">Frontend Developer</h4>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-2 sm:px-3 py-1 rounded-full self-start">Nov
+                  2021 – Jun 2025</span>
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Built user interfaces using Angular, Angular Material, and React</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Worked on TypeScript-heavy components, forms, and client-side validations</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-indigo-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Maintained and updated legacy code while gradually migrating to modern architecture</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div
-          class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border-l-4 border-indigo-500">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-            <div>
-              <h3 class="text-xl font-semibold text-indigo-600">Senior Full-Stack Developer</h3>
-              <p class="text-lg font-medium">SoBiapi</p>
+        <!-- Inside 360 Algeria Company Group -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 mb-6">
+            <div
+              class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-building text-2xl text-green-600"></i>
             </div>
-            <span
-              class="text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-3 py-1 rounded-full">Mar
-              2021 – Present</span>
+            <div class="flex-1">
+              <h3 class="text-xl sm:text-2xl font-bold text-green-600">Inside 360 Algeria</h3>
+              <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Algiers, Algeria • Aug 2021 – Nov 2021
+              </p>
+            </div>
           </div>
-          <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Built Node.js/Express backend services and APIs for scalable client-facing apps
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Implemented unit/integration tests and robust SQL strategies
-            </li>
-          </ul>
+
+          <div class="ml-0 sm:ml-16">
+            <div
+              class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border-l-4 border-green-500">
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 space-y-2 sm:space-y-0">
+                <div class="flex-1">
+                  <h4 class="text-lg sm:text-xl font-semibold text-green-600">Full-Stack Developer</h4>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-green-100 dark:bg-green-900 px-2 sm:px-3 py-1 rounded-full self-start">Aug
+                  2021 – Nov 2021</span>
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Built full-stack application using modern frameworks (Angular, Node.js)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-green-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Designed RESTful APIs and managed robust databases (MongoDB, PostgreSQL)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div
-          class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border-l-4 border-indigo-400">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-            <div>
-              <h3 class="text-xl font-semibold text-indigo-600">Lead Front-End Developer</h3>
-              <p class="text-lg font-medium">SoBiapi</p>
+        <!-- ITexc Agency Company Group -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 mb-6">
+            <div
+              class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-building text-2xl text-purple-600"></i>
             </div>
-            <span
-              class="text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-3 py-1 rounded-full">Jan
-              2022 – Jul 2022</span>
+            <div class="flex-1">
+              <h3 class="text-xl sm:text-2xl font-bold text-purple-600">ITexc Agency</h3>
+              <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Algiers, Algeria • Jan 2019 – Mar 2021
+              </p>
+            </div>
           </div>
-          <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Managed front-end team and collaborated with backend and designers
-            </li>
-          </ul>
+
+          <div class="ml-0 sm:ml-16">
+            <div
+              class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border-l-4 border-purple-500">
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 space-y-2 sm:space-y-0">
+                <div class="flex-1">
+                  <h4 class="text-lg sm:text-xl font-semibold text-purple-600">Full-Stack Developer</h4>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-purple-100 dark:bg-purple-900 px-2 sm:px-3 py-1 rounded-full self-start">Jan
+                  2019 – Mar 2021</span>
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-purple-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Developed scalable, full-stack web applications from concept to deployment</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-purple-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Collaborated with designers and back-end developers to deliver user-centric solutions</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-purple-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Led API development and integration efforts across several client projects</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div
-          class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border-l-4 border-indigo-300">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-            <div>
-              <h3 class="text-xl font-semibold text-indigo-600">Front-End Developer</h3>
-              <p class="text-lg font-medium">SoBiapi</p>
+        <!-- Freelance/Contractor Company Group -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 mb-6">
+            <div
+              class="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-laptop-code text-2xl text-orange-600"></i>
             </div>
-            <span
-              class="text-sm text-gray-600 dark:text-gray-400 bg-indigo-100 dark:bg-indigo-900 px-3 py-1 rounded-full">Nov
-              2021 – Jan 2022</span>
+            <div class="flex-1">
+              <h3 class="text-xl sm:text-2xl font-bold text-orange-600">Freelance/Contractor</h3>
+              <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400">Remote • Ongoing</p>
+            </div>
           </div>
-          <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Built user interfaces using Angular, Angular Material, and React
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Worked on TypeScript-heavy components, forms, and client-side validations
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-indigo-600 mt-1 mr-3 flex-shrink-0"></i>
-              Maintained and updated legacy code while gradually migrating to modern architecture
-            </li>
-          </ul>
+
+          <div class="ml-0 sm:ml-16">
+            <div
+              class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border-l-4 border-orange-500">
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 space-y-2 sm:space-y-0">
+                <div class="flex-1">
+                  <h4 class="text-lg sm:text-xl font-semibold text-orange-600">Full-Stack Developer (Contractor)</h4>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 bg-orange-100 dark:bg-orange-900 px-2 sm:px-3 py-1 rounded-full self-start">Ongoing</span>
+              </div>
+              <ul class="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Develop custom web applications and mobile solutions for diverse client requirements</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Maintain and enhance existing applications with performance optimizations and feature
+                    updates</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Debug and resolve technical issues across frontend and backend systems</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Provide technical consulting and code reviews for client projects</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-600 mt-1 mr-2 sm:mr-3 flex-shrink-0 text-xs sm:text-sm"></i>
+                  <span>Deliver scalable solutions using modern frameworks and best practices</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
     <!-- Education Section -->
     <section id="education" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
@@ -403,8 +584,8 @@
             </div>
           </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
@@ -531,7 +712,7 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
@@ -540,12 +721,12 @@
         <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-         <div
-           class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover-lift">
-           <div
-             class="w-full h-48 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center hover-rotate">
-             <i class="fas fa-tools text-4xl text-white"></i>
-           </div>
+        <div
+          class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover-lift">
+          <div
+            class="w-full h-48 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center hover-rotate">
+            <i class="fas fa-tools text-4xl text-white"></i>
+          </div>
           <h3 class="text-xl font-semibold mb-2 group-hover:text-indigo-600 transition-colors">Workshop Management
             Platform</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">Scalable garage system with booking functionality and
@@ -690,8 +871,32 @@
             </a>
           </div>
         </div>
+
+        <div
+          class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow group">
+          <div
+            class="w-full h-48 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
+            <i class="fas fa-calculator text-4xl text-white"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 group-hover:text-indigo-600 transition-colors">Graden</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">1er service de tarif personnalisé pour les Freelances.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-600 text-xs rounded-full">React</span>
+            <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-600 text-xs rounded-full">Node.js</span>
+            <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-600 text-xs rounded-full">MongoDB</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="https://greadn.com/" target="_blank"
+              class="text-indigo-600 hover:text-indigo-800 transition-colors">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="text-indigo-600 hover:text-indigo-800 transition-colors">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      </section>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="pt-20 sm:pt-24 pb-12 sm:pb-16">
@@ -707,41 +912,63 @@
           <div class="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
             <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
             <div class="space-y-6">
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-envelope text-indigo-600"></i>
+              <a href="mailto:mos.benlagha@gmail.com"
+                class="flex items-center space-x-4 p-3 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-all duration-300 group cursor-pointer hover-lift hover:shadow-lg hover:shadow-indigo-200/50 dark:hover:shadow-indigo-900/30">
+                <div
+                  class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 dark:group-hover:bg-indigo-800 transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+                  <i
+                    class="fas fa-envelope text-indigo-600 group-hover:scale-125 group-hover:animate-bounce transition-all duration-300"></i>
                 </div>
-                <div>
-                  <p class="font-medium">Email</p>
-                  <a href="mailto:mos.benlagha@gmail.com"
-                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 transition-colors">
+                <div class="group-hover:translate-x-1 transition-transform duration-300">
+                  <p
+                    class="font-medium text-gray-900 dark:text-white group-hover:text-indigo-600 transition-colors duration-300">
+                    Email</p>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 group-hover:text-indigo-600 transition-colors duration-300">
                     mos.benlagha@gmail.com
-                  </a>
+                  </p>
                 </div>
-              </div>
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
-                  <i class="fab fa-linkedin text-indigo-600"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mostapha-benlagha/" target="_blank"
+                class="flex items-center space-x-4 p-3 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-all duration-300 group cursor-pointer hover-lift hover:shadow-lg hover:shadow-indigo-200/50 dark:hover:shadow-indigo-900/30">
+                <div
+                  class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 dark:group-hover:bg-indigo-800 transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+                  <i
+                    class="fab fa-linkedin text-indigo-600 group-hover:scale-125 group-hover:animate-bounce transition-all duration-300"></i>
                 </div>
-                <div>
-                  <p class="font-medium">LinkedIn</p>
-                  <a href="https://www.linkedin.com/in/mostapha-benlagha/" target="_blank"
-                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 transition-colors">
+                <div class="group-hover:translate-x-1 transition-transform duration-300">
+                  <p
+                    class="font-medium text-gray-900 dark:text-white group-hover:text-indigo-600 transition-colors duration-300">
+                    LinkedIn</p>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 group-hover:text-indigo-600 transition-colors duration-300">
                     mostapha-benlagha
-                  </a>
+                  </p>
                 </div>
-              </div>
-              <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
-                  <i class="fab fa-github text-indigo-600"></i>
+              </a>
+              <a href="https://github.com/mostafaben" target="_blank"
+                class="flex items-center space-x-4 p-3 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-all duration-300 group cursor-pointer hover-lift hover:shadow-lg hover:shadow-indigo-200/50 dark:hover:shadow-indigo-900/30">
+                <div
+                  class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 dark:group-hover:bg-indigo-800 transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
+                  <i
+                    class="fab fa-github text-indigo-600 group-hover:scale-125 group-hover:animate-bounce transition-all duration-300"></i>
                 </div>
-                <div>
-                  <p class="font-medium">GitHub</p>
-                  <a href="https://github.com/mostafaben" target="_blank"
-                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 transition-colors">
+                <div class="group-hover:translate-x-1 transition-transform duration-300">
+                  <p
+                    class="font-medium text-gray-900 dark:text-white group-hover:text-indigo-600 transition-colors duration-300">
+                    GitHub</p>
+                  <p
+                    class="text-gray-600 dark:text-gray-300 group-hover:text-indigo-600 transition-colors duration-300">
                     mostafaben
-                  </a>
+                  </p>
                 </div>
+              </a>
+              <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                <a href="Mostapha_benlagha_resume.pdf" download="Mostapha_Benlagha_Resume.pdf"
+                  class="w-full bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all duration-300 font-medium hover-lift hover-glow text-center flex items-center justify-center gap-2">
+                  <i class="fas fa-download"></i>
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>
@@ -807,15 +1034,15 @@
           </form>
         </div>
       </div>
-      </section>
-    </main>
+    </section>
+  </main>
 
   <footer
     class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 py-8 mt-20">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="text-gray-600 dark:text-gray-400 mb-4 md:mb-0">
-      © 2025 Mostapha BENLAGHA. All rights reserved.
+          © 2025 Mostapha BENLAGHA. All rights reserved.
         </div>
         <div class="flex space-x-6">
           <a href="https://github.com/mostafaben" target="_blank"
@@ -833,10 +1060,10 @@
         </div>
       </div>
     </div>
-    </footer>
+  </footer>
 
-    <style>
-      * {
+  <style>
+    * {
       font-family: 'Inter', 'Outfit', sans-serif;
     }
 
@@ -937,6 +1164,7 @@
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -948,6 +1176,7 @@
         opacity: 0;
         transform: translateX(-30px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
@@ -959,6 +1188,7 @@
         opacity: 0;
         transform: translateX(30px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
@@ -970,6 +1200,7 @@
         opacity: 0;
         transform: scale(0.8);
       }
+
       to {
         opacity: 1;
         transform: scale(1);
@@ -977,18 +1208,24 @@
     }
 
     @keyframes float {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0px);
       }
+
       50% {
         transform: translateY(-8px);
       }
     }
 
     @keyframes glow {
-      0%, 100% {
+
+      0%,
+      100% {
         box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
       }
+
       50% {
         box-shadow: 0 0 30px rgba(102, 126, 234, 0.6);
       }
@@ -999,6 +1236,7 @@
         opacity: 0;
         transform: translateY(-50px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -1006,37 +1244,82 @@
     }
 
     @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
         transform: translateY(0);
       }
+
       40% {
         transform: translateY(-6px);
       }
+
       60% {
         transform: translateY(-3px);
       }
     }
 
     @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-      20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: translateX(-5px);
+      }
+
+      20%,
+      40%,
+      60%,
+      80% {
+        transform: translateX(5px);
+      }
     }
 
     @keyframes typewriter {
-      from { width: 0; }
-      to { width: 100%; }
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
     }
 
     @keyframes blink {
-      0%, 50% { border-color: transparent; }
-      51%, 100% { border-color: #667eea; }
+
+      0%,
+      50% {
+        border-color: transparent;
+      }
+
+      51%,
+      100% {
+        border-color: #667eea;
+      }
     }
 
     @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     /* Animation Classes */
@@ -1102,12 +1385,29 @@
     }
 
     /* Staggered Animations */
-    .stagger-1 { animation-delay: 0.1s; }
-    .stagger-2 { animation-delay: 0.2s; }
-    .stagger-3 { animation-delay: 0.3s; }
-    .stagger-4 { animation-delay: 0.4s; }
-    .stagger-5 { animation-delay: 0.5s; }
-    .stagger-6 { animation-delay: 0.6s; }
+    .stagger-1 {
+      animation-delay: 0.1s;
+    }
+
+    .stagger-2 {
+      animation-delay: 0.2s;
+    }
+
+    .stagger-3 {
+      animation-delay: 0.3s;
+    }
+
+    .stagger-4 {
+      animation-delay: 0.4s;
+    }
+
+    .stagger-5 {
+      animation-delay: 0.5s;
+    }
+
+    .stagger-6 {
+      animation-delay: 0.6s;
+    }
 
     /* Text Animations */
     .typewriter {
@@ -1121,23 +1421,23 @@
     .parallax {
       transform: translateZ(0);
       will-change: transform;
-      }
+    }
 
     /* Mobile Responsive Improvements */
     @media (max-width: 640px) {
       .animate-gradient {
         background-attachment: scroll;
       }
-      
+
       .hover-lift:hover {
         transform: none;
       }
-      
+
       .hover-glow:hover {
         transform: none;
         box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
       }
-      
+
       .hover-rotate:hover {
         transform: none;
       }
@@ -1152,12 +1452,14 @@
 
     /* Scroll offset for fixed navigation */
     html {
-      scroll-padding-top: 5rem; /* 80px offset for fixed nav */
+      scroll-padding-top: 5rem;
+      /* 80px offset for fixed nav */
     }
 
     @media (min-width: 640px) {
       html {
-        scroll-padding-top: 6rem; /* 96px offset for larger screens */
+        scroll-padding-top: 6rem;
+        /* 96px offset for larger screens */
       }
     }
 
@@ -1197,6 +1499,7 @@
         position: fixed !important;
         top: 0 !important;
       }
+
       body {
         padding-top: 80px;
       }
@@ -1249,15 +1552,25 @@
     .animate-slideInFromTop.animate-slideInFromTop {
       opacity: 1;
       transform: translateY(0);
-      }
-    </style>
+    }
+
+    /* Progress bar animations */
+    .progress-bar {
+      width: 0% !important;
+      transition: width 1.5s ease-in-out;
+    }
+
+    .progress-bar.animate {
+      width: var(--target-width) !important;
+    }
+  </style>
 
   <script>
     // Mobile menu toggle
     document.addEventListener('DOMContentLoaded', function () {
       const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
-      
+
       if (mobileMenuToggle && mobileMenu) {
         mobileMenuToggle.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
@@ -1268,7 +1581,7 @@
             icon.className = 'fas fa-times text-sm';
           }
         });
-        
+
         // Close mobile menu when clicking on a link
         mobileMenu.querySelectorAll('a').forEach(link => {
           link.addEventListener('click', () => {
@@ -1504,125 +1817,156 @@
       }
     });
 
-     // Add scroll effect to navigation
-     window.addEventListener('scroll', () => {
-       const nav = document.getElementById('navbar');
-       if (window.scrollY > 50) {
-         nav.classList.add('shadow-lg', 'bg-white/95', 'dark:bg-slate-900/95');
-         nav.classList.remove('bg-white/90', 'dark:bg-slate-900/90');
-       } else {
-         nav.classList.remove('shadow-lg', 'bg-white/95', 'dark:bg-slate-900/95');
-         nav.classList.add('bg-white/90', 'dark:bg-slate-900/90');
-       }
-     });
+    // Add scroll effect to navigation
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('shadow-lg', 'bg-white/95', 'dark:bg-slate-900/95');
+        nav.classList.remove('bg-white/90', 'dark:bg-slate-900/90');
+      } else {
+        nav.classList.remove('shadow-lg', 'bg-white/95', 'dark:bg-slate-900/95');
+        nav.classList.add('bg-white/90', 'dark:bg-slate-900/90');
+      }
+    });
 
-     // Scroll-triggered animations removed for cleaner experience
+    // Scroll-triggered animations removed for cleaner experience
 
-     // Parallax effect for hero section
-     window.addEventListener('scroll', () => {
-       const scrolled = window.pageYOffset;
-       const parallax = document.querySelector('.animate-gradient');
-       if (parallax) {
-         const speed = scrolled * 0.5;
-         parallax.style.transform = `translateY(${speed}px)`;
-       }
-     });
+    // Parallax effect for hero section
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallax = document.querySelector('.animate-gradient');
+      if (parallax) {
+        const speed = scrolled * 0.5;
+        parallax.style.transform = `translateY(${speed}px)`;
+      }
+    });
 
-     // Add click animations to buttons
-     document.querySelectorAll('button, a').forEach(element => {
-       element.addEventListener('click', function(e) {
-         this.style.transform = 'scale(0.95)';
-         setTimeout(() => {
-           this.style.transform = '';
-         }, 150);
-       });
-     });
+    // Add click animations to buttons
+    document.querySelectorAll('button, a').forEach(element => {
+      element.addEventListener('click', function (e) {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = '';
+        }, 150);
+      });
+    });
 
-     // Add hover sound effects (visual feedback)
-     document.querySelectorAll('.hover-lift').forEach(element => {
-       element.addEventListener('mouseenter', function() {
-         this.style.transform = 'translateY(-5px) scale(1.02)';
-       });
-       
-       element.addEventListener('mouseleave', function() {
-         this.style.transform = 'translateY(0) scale(1)';
-       });
-     });
+    // Add hover sound effects (visual feedback)
+    document.querySelectorAll('.hover-lift').forEach(element => {
+      element.addEventListener('mouseenter', function () {
+        this.style.transform = 'translateY(-5px) scale(1.02)';
+      });
 
-     // Typing animation for hero title
-     function typeWriter(element, text, speed = 100) {
-       let i = 0;
-       element.innerHTML = '';
-       
-       function type() {
-         if (i < text.length) {
-           element.innerHTML += text.charAt(i);
-           i++;
-           setTimeout(type, speed);
-         }
-       }
-       
-       type();
-     }
+      element.addEventListener('mouseleave', function () {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
 
-     // Initialize typing animation when page loads
-     setTimeout(() => {
-       const heroTitle = document.querySelector('h1');
-       if (heroTitle) {
-         const originalText = heroTitle.textContent;
-         typeWriter(heroTitle, originalText, 150);
-       }
-     }, 1000);
+    // Typing animation for hero title
+    function typeWriter(element, text, speed = 100) {
+      let i = 0;
+      element.innerHTML = '';
 
-     // Add floating animation to decorative elements
-     document.querySelectorAll('.animate-float').forEach((element, index) => {
-       element.style.animationDelay = `${index * 0.5}s`;
-     });
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
 
-     // Add glow effect on scroll
-     window.addEventListener('scroll', () => {
-       const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-       const glowIntensity = Math.min(scrollPercent * 2, 1);
-       
-       document.querySelectorAll('.animate-glow').forEach(element => {
-         element.style.boxShadow = `0 0 ${20 + glowIntensity * 20}px rgba(102, 126, 234, ${0.3 + glowIntensity * 0.3})`;
-       });
-     });
+      type();
+    }
 
-     // Add shake animation to form validation errors
-     function shakeElement(element) {
-       element.classList.add('animate-shake');
-       setTimeout(() => {
-         element.classList.remove('animate-shake');
-       }, 500);
-     }
+    // Initialize typing animation when page loads
+    setTimeout(() => {
+      const heroTitle = document.querySelector('h1');
+      if (heroTitle) {
+        const originalText = heroTitle.textContent;
+        typeWriter(heroTitle, originalText, 150);
+      }
+    }, 1000);
 
-     // Enhanced form validation with animations
-     document.querySelectorAll('input, textarea').forEach(input => {
-       input.addEventListener('invalid', function() {
-         shakeElement(this);
-       });
-     });
+    // Add floating animation to decorative elements
+    document.querySelectorAll('.animate-float').forEach((element, index) => {
+      element.style.animationDelay = `${index * 0.5}s`;
+    });
 
-     // Add particle effect to hero section
-     function createParticles() {
-       const hero = document.querySelector('.animate-gradient');
-       if (!hero) return;
-       
-       for (let i = 0; i < 20; i++) {
-         const particle = document.createElement('div');
-         particle.className = 'absolute w-2 h-2 bg-indigo-400 rounded-full opacity-30 animate-float';
-         particle.style.left = Math.random() * 100 + '%';
-         particle.style.top = Math.random() * 100 + '%';
-         particle.style.animationDelay = Math.random() * 3 + 's';
-         particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
-         hero.appendChild(particle);
-       }
-     }
+    // Add glow effect on scroll
+    window.addEventListener('scroll', () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      const glowIntensity = Math.min(scrollPercent * 2, 1);
 
-     // Initialize particles after page load
-     setTimeout(createParticles, 2000);
+      document.querySelectorAll('.animate-glow').forEach(element => {
+        element.style.boxShadow =
+          `0 0 ${20 + glowIntensity * 20}px rgba(102, 126, 234, ${0.3 + glowIntensity * 0.3})`;
+      });
+    });
+
+    // Add shake animation to form validation errors
+    function shakeElement(element) {
+      element.classList.add('animate-shake');
+      setTimeout(() => {
+        element.classList.remove('animate-shake');
+      }, 500);
+    }
+
+    // Enhanced form validation with animations
+    document.querySelectorAll('input, textarea').forEach(input => {
+      input.addEventListener('invalid', function () {
+        shakeElement(this);
+      });
+    });
+
+    // Add particle effect to hero section
+    function createParticles() {
+      const hero = document.querySelector('.animate-gradient');
+      if (!hero) return;
+
+      for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'absolute w-2 h-2 bg-indigo-400 rounded-full opacity-30 animate-float';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 3 + 's';
+        particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        hero.appendChild(particle);
+      }
+    }
+
+    // Initialize particles after page load
+    setTimeout(createParticles, 2000);
+
+    // Progress bar animation on scroll
+    function animateProgressBars() {
+      const skillsSection = document.getElementById('skills');
+      if (!skillsSection) return;
+
+      const progressBars = document.querySelectorAll('.progress-bar');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            progressBars.forEach((bar, index) => {
+              setTimeout(() => {
+                const targetWidth = bar.getAttribute('data-width');
+                bar.style.setProperty('--target-width', targetWidth + '%');
+                bar.classList.add('animate');
+              }, index * 200); // Stagger animation by 200ms
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+
+      observer.observe(skillsSection);
+    }
+
+    // Initialize progress bar animations
+    document.addEventListener('DOMContentLoaded', animateProgressBars);
   </script>
-  </body>
+</body>
 
 </html>
