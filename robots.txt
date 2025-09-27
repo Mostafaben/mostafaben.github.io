@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://mostafaben.github.io/sitemap.xml
+Sitemap: https://mostapha-benlagha.github.io/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

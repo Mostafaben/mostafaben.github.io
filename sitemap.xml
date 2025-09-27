@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
   <url>
-    <loc>https://mostafaben.github.io/</loc>
+    <loc>https://mostapha-benlagha.github.io/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mostapha-benlagha.github.io/assets/AkStore.com.png</image:loc>
+      <image:title>Mostapha BENLAGHA - Full-Stack Developer Portfolio</image:title>
+      <image:caption>Portfolio showcasing Angular, React, Node.js development skills</image:caption>
+    </image:image>
   </url>
+  
+  <!-- Resume/CV -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/Mostapha_benlagha_resume.pdf</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/#contact</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/#about</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Skills Section -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/#skills</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Experience Section -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/#experience</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Projects Section -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/#projects</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Education Section -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/#education</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Certifications Section -->
+  <url>
+    <loc>https://mostapha-benlagha.github.io/#certifications</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 </urlset>
